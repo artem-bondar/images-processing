@@ -1,3 +1,5 @@
+#include <vector>
+
 #include "calculations.h"
 
 using std::get;
@@ -162,7 +164,7 @@ Image add_border(Image src_image, const uint border_radius) {
 }
 
 Image cut_border(Image src_image, const uint border_radius) {
-	if (2 * border_radius + 1 > src_image.n_rows || 2 * border_radius + 1 > src_image.n_rows)
+	if (2 * border_radius + 1 > src_image.n_rows)
 		throw std::string("radius is too big for this picture");
 	Image new_image(src_image.n_rows - 2 * border_radius, src_image.n_cols - 2 * border_radius);
 	for (uint i = 0; i < new_image.n_rows; ++i) {

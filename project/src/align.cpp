@@ -432,7 +432,7 @@ Image median_linear(Image src_image, int radius) {
 	const uint stop_sum = 2 * radius * (radius + 1) + 1;
 	int deltaJadd, deltaJdel;
 	Image dst_image = src_image.deep_copy();
-	if (2 * static_cast<uint>(radius) + 1 > src_image.n_rows || 2 * static_cast<uint>(radius) + 1 > src_image.n_rows)
+	if (2 * static_cast<uint>(radius) + 1 > src_image.n_rows)
 		throw std::string("radius is too big for this picture");
 
  // Initialization of histogram
@@ -536,7 +536,7 @@ Image median_const(Image src_image, int radius) {
 	const uint stop_sum = 2 * radius * (radius + 1) + 1;
 	int deltaJadd, deltaJdel;
 	Image dst_image = src_image.deep_copy();
-	if (2 * static_cast<uint>(radius) + 1 > src_image.n_rows || 2 * static_cast<uint>(radius) + 1 > src_image.n_rows)
+	if (2 * static_cast<uint>(radius) + 1 > src_image.n_rows)
 		throw std::string("radius is too big for this picture");
 
  // Initialization of columns histograms
