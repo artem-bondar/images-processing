@@ -26,12 +26,8 @@ Run `./align --help` to see all available options.
 
 3 *R, G, B* channels:
 
-<img src="pictures/1.bmp" width="32%">
-<img src="pictures/2.bmp" width="32%">
-<img src="pictures/3.bmp" width="32%">
+<img src="pictures/1.bmp" width="32%"><img src="pictures/2.bmp" width="32%"><img src="pictures/3.bmp" width="32%">
 
 Resulting images:
 
-<img src="results/align/1.bmp" width="32%">
-<img src="results/align/2.bmp" width="32%">
-<img src="results/align/3.bmp" width="32%">
+<img src="results/align/1.bmp" width="32%"><img src="results/align/2.bmp" width="32%"><img src="results/align/3.bmp" width="32%">
